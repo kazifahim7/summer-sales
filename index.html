@@ -17,7 +17,7 @@
 </head>
 <body class="work-sans lg:container lg:mx-auto">
      <!-- header section -->
-     <header>
+     <header id="header" class="">
           <div class="hero min-w-full lg:min-h-screen bg-[#F9F6E2]">
                <div class="hero-content flex-col lg:flex-row-reverse bg-[#F9F6E2]">
                  <img src="./pictures/Summer 1.png" class="max-w-lg rounded-lg " />
@@ -26,7 +26,7 @@
                    <h1 class="text-5xl font-bold text-center mt-4">Purchase TK 200 or above & get <span class="text-[#E527B2]"> 20% off</span></h1>
                    <div class="flex justify-center items-center gap-2">
                     <p class="py-6 text-sm text-black font-semibold">Use Promo Code</p>
-                   <button class="btn bg-[#E527B2] text-white">SELL200</button>
+                   <button onclick="startBuy()" class="btn bg-[#E527B2] text-white">SELL200</button>
                    </div>
                  </div>
                </div>
@@ -35,7 +35,7 @@
      </header>
 
      <!-- main section -->
-     <main >
+     <main id="main-container">
           <h1 class="text-4xl text-black font-extrabold my-3 text-center"><span class="text-red-800">More</span> <span class="text-green-700">product !!</span></h1>
           <section class="mt-7 flex flex-col md:flex-row gap-20">
                
@@ -186,7 +186,7 @@
                            
                          </div>
                        </div>
-                    <div class="card  bg-base-100 shadow-xl">
+                    <div class="card w-full bg-base-100 shadow-xl">
                          <figure class="px-10 pt-10">
                            <img src="./pictures/prod9.png" alt="prod1" class="rounded-xl " />
                          </figure>
@@ -206,20 +206,20 @@
                </div>
                <!-- result section -->
                <div class=" ml-20 md:ml-0">
-                    <div class="card  bg-base-100 shadow-xl mt-3">
+                    <div class="card max-w-screen-sm bg-base-100 shadow-xl mt-3">
                          <div class="card-body">
                            <h2 class="card-title">Have coupon?</h2>
                            
                            
-                             <div class="flex gap-0">
-                              <input class=" border-2  p-2 rounded-lg" type="text" placeholder="Coupon code">
-                              <button class="btn bg-[#E527B2]">Apply</button>
+                             <div class="flex gap-0 ">
+                              <input class=" border-2 w-full  p-2 rounded-lg" type="text" placeholder="Coupon code">
+                              <button class="btn bg-[#E527B2] ">Apply</button>
                              </div>
                            
                          </div>
                        </div>
 
-                       <div class="card card-compact  bg-base-100 shadow-xl mt-3">
+                       <div class="card w-full card-compact  bg-base-100 shadow-xl mt-3">
                          <div class="p-10">
                               
                               
@@ -275,6 +275,9 @@
             <a class="link link-hover">Cookie policy</a>
           </nav>
         </footer>
+
+
+        <script src="./js/style.js"></script>
      
 </body>
 </html>
