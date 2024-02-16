@@ -13,12 +13,20 @@ for(const card of cards){
 
             const itemsContiner =document.getElementById('items-continer');
             
-            const p = document.createElement('p');
             
-            p.innerText = count +' '+text;
+            const p = document.createElement('li');
+            
+            p.innerText = text;
+            
             itemsContiner.appendChild(p);
+
+           
+            
+           
             
             count++;
+
+            
 
             const priceTag = card.querySelector('h3');
            const priceText = priceTag.innerText ;
@@ -32,8 +40,12 @@ for(const card of cards){
           fastPrice.innerText=      `${totalPrice} taka`
           console.log(fastPrice);
 
+
+         
+          
+
            
-      
+          
             
             
             
@@ -83,9 +95,14 @@ for(const card of cards){
             mainContainer.classList.add('hidden');
             const footerSection = document.getElementById('footer-section');
             footerSection.classList.add('hidden')
+
+           
+
             }
             
        })
+
+       let lastCount = 1; 
 
        function home(){
             const congratulationSection = document.getElementById('last-section');
@@ -96,7 +113,34 @@ for(const card of cards){
             mainContainer.classList.remove('hidden');
             const footerSection = document.getElementById('footer-section');
             footerSection.classList.remove('hidden')
+            const fastPrice = document.getElementById('total');
+            fastPrice.innerText=      ` 0taka`
+            const discountTag = document.getElementById('discount');
+            discountTag.innerText= '0';
+            const finalScore = document.getElementById('total-feild');
+            finalScore.innerText = '0';
+
+            const itemsContiner =document.getElementById('items-continer');
+            itemsContiner.innerText = '';
             
+            
+
+            
+            
+            
+            
+
+
+           
+           
+
+            
+
+            
+            
+           
+          
+            // lastCount++;
 
        }
  
