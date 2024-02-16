@@ -15,6 +15,7 @@ for(const card of cards){
             
             
             const p = document.createElement('li');
+            p.classList.add('list-decimal')
             
             p.innerText = text;
             
