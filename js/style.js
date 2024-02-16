@@ -3,7 +3,7 @@ function startBuy(){
       hederRemove.classList.add('hidden');
 }
 
- let count =1 ;
+ 
  let totalPrice = 0;
 const cards = document.querySelectorAll('.card-1');
 for(const card of cards){
@@ -25,8 +25,7 @@ for(const card of cards){
             
            
             
-            count++;
-
+           
             
 
             const priceTag = card.querySelector('h3');
@@ -38,7 +37,7 @@ for(const card of cards){
           
 
           const fastPrice = document.getElementById('total');
-          fastPrice.innerText=      `${totalPrice} taka`
+          fastPrice.innerText=      `${totalPrice} $`
           console.log(fastPrice);
 
 
@@ -64,10 +63,10 @@ for(const card of cards){
             if(totalPrice>=200){
                   const discountPrice = totalPrice * 0.2 ;
                   const discountTag = document.getElementById('discount');
-                  discountTag.innerText=discountPrice;
+                  discountTag.innerText=discountPrice.toFixed(2) + ' ' +'$';
                   const currentPrice = totalPrice - discountPrice ;
                   const finalScore = document.getElementById('total-feild');
-                  finalScore.innerText = currentPrice.toFixed(2);
+                  finalScore.innerText = currentPrice.toFixed(2) + ' ' +'$';
                   
                   
                   
